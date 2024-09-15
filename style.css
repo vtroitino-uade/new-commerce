@@ -120,3 +120,55 @@ i {
   width: 18px;
   height: 18px;
 }
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  background-color: #131d26;
+  border-radius: 8px;
+  padding-bottom: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.portfolio-item h2 {
+  font-size: 1.5rem;
+}
+.portfolio-item a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: block;
+}
+.portfolio-item a:hover {
+  background-color: grey;
+}
+.portfolio-item img {
+  width: 100%;
+}
+.portfolio-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background-color: var(--secondary-text-color);
+  width: 3rem;
+  height: 3rem;
+}
+.github {
+  -webkit-mask-image: url("./assets/svg/github.svg");
+  mask-image: url("./assets/svg/github.svg");
+}
+.figma {
+  -webkit-mask-image: url("./assets/svg/figma.svg");
+  mask-image: url("./assets/svg/figma.svg");
+}
