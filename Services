@@ -9,7 +9,7 @@
         .starfield {
             position: relative;
             background-color: black; 
-            background-image: url(/IMG/Canvas.png); 
+            background-image: url(Canvas.png); 
             background-size: cover; 
             background-repeat: repeat;
             background-position: center;
