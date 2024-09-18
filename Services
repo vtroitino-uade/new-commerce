@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .starfield {
+            position: relative;
+            background-color: black; 
+            background-image: url(/IMG/Canvas.png); 
+            background-size: cover; 
+            background-repeat: repeat;
+            background-position: center;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2; 
+        }
+    </style>
+</head>
+<body class="bg-black text-white starfield">
+
+    <!-- Navbar -->
+    <header class="bg-black text-white py-6">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center">
+                <img src="Logo.png" alt="Logo" class="w-20 h-auto">
+            </div>
+    
+            <!-- Icono del menú hamburguesa -->
+            <button class="md:hidden block text-white" id="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+    
+            <!-- Menu Links -->
+            <ul class="hidden md:flex space-x-6" id="menu">
+                <li><a href="#" class="hover:text-blue-400">Inicio</a></li>
+                <li><a href="#" class="hover:text-blue-400">Servicios</a></li>
+                <li><a href="#" class="hover:text-blue-400">Sobre nosotros</a></li>
+                <li><a href="#" class="hover:text-blue-400">Support</a></li>
+                <li><a href="#" class="hover:text-blue-400">Contacto</a></li>
+            </ul>
+            <ul class="md:hidden hidden space-y-4 absolute top-16 right-4 bg-black text-white w-48 rounded-lg shadow-lg z-50" id="menu-mobile">
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Inicio</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Servicios</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Sobre nosotros</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Support</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu-mobile');
+    
+        menuButton.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+    
+    
+
+    <!-- Hero Section -->
+    <section class="text-center py-20 bg-gradient-to-b from-gray-900 to-black content">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"> "Transformamos tus ideas en soluciones digitales innovadoras"</h1>
+            <p class="text-base md:text-lg lg:text-xl mb-8 px-4 md:px-0">
+                En <span class="text-blue-400">NewCommerce</span>, diseñamos y desarrollamos software a medida para impulsar tu negocio hacia el futuro.</p>
+            <div class="space-x-4">
+                <a href="#" class="bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600">Demo</a>
+                <a href="#" class="text-blue-400 hover:underline">How it works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 content">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-12">Desarrollamos tecnología que marca la diferencia.</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white text-black p-6 rounded-lg shadow-lg">
+                    <img src="servicio1.jpg" alt="Servicio 1" class="w-full h-48 object-cover mb-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">DESCRIPCIÓN DE ALGUN SERVICIO</h3>
+                    <p class="text-gray-700">Breve descripción del servicio ofrecido por la empresa.</p>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="bg-white text-black p-6 rounded-lg shadow-lg">
+                    <img src="servicio2.jpg" alt="Servicio 2" class="w-full h-48 object-cover mb-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">DESCRIPCIÓN DE ALGUN SERVICIO</h3>
+                    <p class="text-gray-700">Breve descripción del servicio ofrecido por la empresa.</p>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="bg-white text-black p-6 rounded-lg shadow-lg">
+                    <img src="servicio3.jpg" alt="Servicio 3" class="w-full h-48 object-cover mb-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">DESCRIPCIÓN DE ALGUN SERVICIO</h3>
+                    <p class="text-gray-700">Breve descripción del servicio ofrecido por la empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-6 content">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 mb-4 md:mb-0">&copy; Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024.</p>
+            <p class="text-gray-400 mb-4 md:mb-0">Materia: Diseño y desarrollo web</p>
+            <p class="text-gray-400 mb-4 md:mb-0">Curso: 480799</p>
+            <p class="text-gray-400 mb-4 md:mb-0">Grupo: 10</p>
+            <img src="./assets/img/logo-uade.png">
+            <div class="flex space-x-6">
+                <a href="#"><img src="icon-facebook.png" alt="Facebook" class="w-6 h-6"></a>
+                <a href="#"><img src="icon-twitter.png" alt="Twitter" class="w-6 h-6"></a>
+                <a href="#"><img src="icon-linkedin.png" alt="LinkedIn" class="w-6 h-6"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
