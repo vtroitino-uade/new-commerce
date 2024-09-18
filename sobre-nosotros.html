@@ -1,22 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/output.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Sobre nosotros</a></li>
-          <li><a href="./sobrenosotros.html">Conoce al equipo</a></li>
-          <li><a href="#">Nuestro trabajo</a></li>
-          <li><a href="#">Únete al equipo</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header id="header-placeholder" class="bg-black text-white py-6"></header>
     <main>
       <h1>Nuestro Portfolio</h1>
       <div class="portfolio-grid">
@@ -86,5 +77,16 @@
         </div>
       </div>
     </main>
+    <footer
+      id="footer-placeholder"
+      class="bg-bg-footer bg-center bg-cover flex bg-black w-full items-center justify-center"
+    ></footer>
   </body>
 </html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#header-placeholder").load("./src/html/header.html");
+    $("#footer-placeholder").load("./src/html/footer.html");
+  });
+</script>

@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./src/output.css" rel="stylesheet">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
     <title>Inicio</title>
-</head>
-<body class="flex flex-col min-h-screen">
-    <header></header>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header id="header-placeholder" class="bg-black text-white py-6"></header>
     <main class="items-center justify-center flex-grow bg-yellow-400 h-64">
-        <div class="bg-container-white h-64 w-16">
-            <h1 class="text-black"> Holaaa </h1>
-            <img src="">
-        </div>
+      <div class="bg-container-white h-64 w-16">
+        <h1 class="text-black">Holaaa</h1>
+        <img src="" />
+      </div>
     </main>
-    <footer name="footer" class="bg-bg-footer bg-center bg-cover flex bg-black w-full items-center justify-center">
-        <div class="flex flex-col items-center justify-center h-64 text-white pr-10">
-            <div class="flex space-x-4">
-                <p>Materia: Diseño y desarrollo web</p>
-                <p>Curso: 480799</p>
-                <p>Grupo: 10</p>
-            </div>
-            <div>
-                <p>Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
-            </div>
-        </div>
-        <div class="self-center flex h-16 bg-white">
-            <img src="./assets/img/logo-uade.png">
-        </div>
-    </footer>
-</body>
+    <footer
+      id="footer-placeholder"
+      class="bg-bg-footer bg-center bg-cover flex bg-black w-full items-center justify-center"
+    ></footer>
+  </body>
 </html>
-<script
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#header-placeholder").load("./src/html/header.html");
+    $("#footer-placeholder").load("./src/html/footer.html");
+  });
+</script>

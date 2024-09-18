@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-    h1 {
-      @apply text-3xl font-bold text-gray-800 underline;
-    }
+  h1 {
+    @apply text-3xl font-bold text-gray-800 underline;
+  }
 }
