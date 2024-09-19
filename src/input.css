@@ -12,6 +12,18 @@
   main {
     @apply bg-auto bg-no-repeat bg-top  bg-center bg-bg-main;
   }
+  .portfolio-item {
+    @apply text-center items-center p-4 h-auto w-auto text-3xl
+  }
+
+  .portfolio-links {
+    @apply text-3xl space-x-4
+  }
+
+  .portfolio-links h2 {
+    @apply py-4
+  }
+  
   /* .starfield {
     @apply bg-cover bg-no-repeat bg-center bg-bg-main; */
     /* position: relative; */

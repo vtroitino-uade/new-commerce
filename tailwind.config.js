@@ -10,7 +10,8 @@ module.exports = {
       },
       backgroundImage: {
         'bg-footer': "url('../assets/img/degrade-footer.png')",
-        'bg-main': "url('../assets/img/Canvas.png')"
+        'bg-main': "url('../assets/img/Canvas.png')",
+        'bg-gradient': "url('../assets/img/top-gradient.png')"
       }
     },
   },
