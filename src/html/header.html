@@ -47,7 +47,9 @@
     id="menu-mobile"
   >
     <li>
-      <a href="../../soporte.html" class="block px-4 py-2 hover:bg-gray-700"
+      <a
+        href="../../sobre-nosotros.html"
+        class="block px-4 py-2 hover:bg-gray-700"
         >Sobre nosotros</a
       >
     </li>
@@ -57,9 +59,7 @@
       >
     </li>
     <li>
-      <a
-        href="../../sobre-nosotros.html"
-        class="block px-4 py-2 hover:bg-gray-700"
+      <a href="../../soporte.html" class="block px-4 py-2 hover:bg-gray-700"
         >Soporte</a
       >
     </li>
@@ -78,25 +78,25 @@
     menu.classList.toggle("hidden");
   });
 
-  window.addEventListener("load", () => {
-    const links = document.querySelectorAll("#menu li");
-    const nosotros = document.getElementById("sobre-nosotros");
-    const servicios = document.getElementById("servicios");
-    const soporte = document.getElementById("soporte");
-    const portfolio = document.getElementById("portfolio");
+  const links = document.querySelectorAll("#menu li");
+  const nosotros = document.getElementById("sobre-nosotros");
+  const servicios = document.getElementById("servicios");
+  const soporte = document.getElementById("soporte");
+  const portfolio = document.getElementById("portfolio");
 
-    links.forEach((link) => link.classList.remove("border-b-4", "border-bg-button"));
+  links.forEach((link) =>
+    link.classList.remove("border-b-4", "border-bg-button")
+  );
 
-    const path = window.location.pathname;
+  const path = window.location.pathname;
 
-    if (path.includes("sobre-nosotros.html")) {
-      nosotros.classList.add("border-b-4", "border-bg-button");
-    } else if (path.includes("services.html")) {
-      servicios.classList.add("border-b-4", "border-bg-button");
-    } else if (path.includes("soporte.html")) {
-      soporte.classList.add("border-b-4", "border-bg-button");
-    } else if (path.includes("portfolio.html")) {
-      portfolio.classList.add("border-b-4", "border-bg-button");
-    }
-  });
+  if (path.includes("sobre-nosotros.html")) {
+    nosotros.classList.add("border-b-4", "border-bg-button");
+  } else if (path.includes("services.html")) {
+    servicios.classList.add("border-b-4", "border-bg-button");
+  } else if (path.includes("soporte.html")) {
+    soporte.classList.add("border-b-4", "border-bg-button");
+  } else if (path.includes("portfolio.html")) {
+    portfolio.classList.add("border-b-4", "border-bg-button");
+  }
 </script>

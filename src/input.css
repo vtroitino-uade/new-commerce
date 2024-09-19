@@ -25,26 +25,12 @@
     @apply shadow-md shadow-black/25 hover:shadow-none;
   }
   .portfolio-item {
-    @apply text-center items-center p-4 h-auto w-auto text-3xl
+    @apply text-center items-center p-4 h-auto w-auto text-3xl;
   }
-
   .portfolio-links {
-    @apply text-3xl space-x-4
+    @apply text-3xl space-x-4;
   }
-
   .portfolio-links h2 {
-    @apply py-4
+    @apply py-4;
   }
-  
-  /* .starfield {
-    @apply bg-cover bg-no-repeat bg-center bg-bg-main; */
-    /* position: relative; */
-    /* background-image: url(../Canvas.png);
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center; */
-  /* }
-  .button-text {
-    @apply text-xl;
-  } */
 }
