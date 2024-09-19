@@ -6,11 +6,13 @@ module.exports = {
       colors: {
         'brand-blue': '#253F55',
         'bg-black': '#09090B',
-        'container-white': '#FCFCFC'
+        'bg-button': '#0077B6',
+        'container-white': '#FCFCFC',
+        'link-hover': '#90E0EF'
       },
       backgroundImage: {
         'bg-footer': "url('../assets/img/degrade-footer.png')",
-        'bg-main': "url('../assets/img/Canvas.png')"
+        'bg-main': "url('../assets/img/Canvas.png')",
       }
     },
   },

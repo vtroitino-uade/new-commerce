@@ -3,41 +3,208 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios</title>
     <link rel="stylesheet" href="./src/output.css" />
-    <title>Inicio</title>
+    <script
+      src="https://kit.fontawesome.com/29c3be7601.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
-  <body
-    class="bg-bg-footer bg-center bg-cover flex flex-col min-h-screen w-full"
-  >
-    <!-- Navbar -->
-    <header id="header-placeholder" class="bg-black text-white py-6"></header>
-
-    <main class="flex flex-grow items-center justify-center">
-      <!-- Hero Section-->
-      <div class="starfield"></div>
-      <div
-        class="container mx-10 my-10 flex flex-col bg-container-white py-8 sm:py-14 px-10 rounded-md"
+  <body class="bg-black text-white">
+    <header id="header-placeholder" class="bg-black text-white h-24"></header>
+    <main class="bg-none">
+      <section
+        class="text-center py-20 bg-gradient-to-b from-gray-900 to-black content"
       >
-        <h1 class="self-center pb-6">NEWECOMMERCE</h1>
+        <div class="container mx-auto px-4">
+          <h1 class="text-container-white pb-5">CENTRO DE AYUDA</h1>
+          <p class="text-base md:text-lg lg:text-xl mb-8 px-4 md:px-0">
+            Estamos siempre a tu disposición.
+          </p>
+        </div>
+      </section>
+      <section class="py-16 h-[70dvh]">
         <div
-          class="flex flex-col sm:flex-row w-full md:w-auto items-center justify-center sm:space-x-10 border-t-black border-t-2 pt-4"
+          class="container text-center bg-container-white rounded-lg mx-auto px-20 sm:px-32 py-12"
         >
-          <div class="flex flex-col sm:text-3xl bold">
-            <h2>SOMOS NEWECOMMERCE.</h2>
-            <h2>Nuestra prioridad,</h2>
-            <h2 class="mb-10">tus clientes.</h2>
-            <a
-              class="flex bg-black rounded-full w-auto max-w-48 h-12 text-white items-center justify-center mb-10 sm:mb-0"
-              href="sobre-nosotros.html"
-              ><p class="button-text">CONOCENOS</p></a
-            >
-          </div>
-          <div class="w-full sm:w-1/2">
-            <img src="./assets/img/inicio-stock.png" />
+          <h2 class="pb-12">¿Cómo te podemos ayudar?</h2>
+          <div class="flex justify-between sm:justify-around">
+            <div class="flex flex-col gap-3 w-20 sm:w-28">
+              <a
+                href="#faq"
+                class="h-20 sm:h-28 bg-bg-button flex items-center justify-center rounded-full"
+                ><i class="fab fa-question text-5xl sm:text-7xl"></i
+              ></a>
+              <p class="text-black text-base md:text-lg lg:text-xl">
+                Preguntas Frecuentes
+              </p>
+            </div>
+            <div class="flex flex-col gap-3 w-20 sm:w-28">
+              <a
+                href="#atencion"
+                class="h-20 sm:h-28 bg-bg-button flex items-center justify-center rounded-full"
+                ><i class="fa-solid fa-headset text-5xl sm:text-7xl"></i
+              ></a>
+              <p class="text-black text-base md:text-lg lg:text-xl">
+                Atención al Cliente
+              </p>
+            </div>
+            <div class="flex flex-col gap-3 w-20 sm:w-28">
+              <a
+                href="#asistente"
+                class="h-20 sm:h-28 bg-bg-button flex items-center justify-center rounded-full"
+                ><i class="fa-solid fa-robot text-5xl sm:text-7xl"></i
+              ></a>
+              <p class="text-black text-base md:text-lg lg:text-xl">
+                Asistente Virtual
+              </p>
+            </div>
           </div>
         </div>
+      </section>
+      <div class="container mx-auto flex flex-col gap-12">
+        <section id="faq" class="h-full flex items-center gap-5 mt-10">
+          <i class="fab fa-question text-7xl"></i>
+          <div>
+            <h2 class="text-container-white mb-8">Preguntas Frecuentes</h2>
+            <div class="container mx-auto px-6">
+              <div class="faq-item mb-6">
+                <h3 class="text-xl font-semibold mb-2">
+                  ¿Qué tipo de sitios web desarrollan?
+                </h3>
+                <p>
+                  Ofrecemos desarrollo de sitios web personalizados para una
+                  variedad de industrias, desde sitios web corporativos hasta
+                  plataformas e-commerce. Nos enfocamos en crear experiencias
+                  rápidas, seguras y escalables, utilizando las últimas
+                  tecnologías web.
+                </p>
+              </div>
+
+              <div class="faq-item mb-6">
+                <h3 class="text-xl font-semibold mb-2">
+                  ¿Cómo integran el análisis de datos en los sitios web?
+                </h3>
+                <p>
+                  Utilizamos herramientas avanzadas de análisis de datos para
+                  mejorar la toma de decisiones estratégicas de tu negocio.
+                  Podemos integrar dashboards interactivos, informes
+                  personalizados y análisis de comportamiento de usuarios para
+                  que tengas información valiosa en tiempo real.
+                </p>
+              </div>
+
+              <div class="faq-item mb-6">
+                <h3 class="text-xl font-semibold mb-2">
+                  ¿Qué soluciones de inteligencia artificial (IA) ofrecen?
+                </h3>
+                <p>
+                  Ofrecemos soluciones basadas en IA como chatbots, análisis
+                  predictivo, personalización de contenido y automatización de
+                  procesos, diseñadas específicamente para mejorar la eficiencia
+                  de tu sitio web y experiencia del usuario.
+                </p>
+              </div>
+              <div class="faq-item mb-6">
+                <h3 class="text-xl font-semibold mb-2">
+                  ¿Qué beneficios aporta la IA en mi sitio web?
+                </h3>
+                <p>
+                  La IA puede mejorar significativamente la experiencia del
+                  usuario a través de recomendaciones personalizadas, atención
+                  al cliente automatizada, análisis predictivo y más, lo que
+                  puede aumentar la conversión y optimizar los recursos de tu
+                  empresa.
+                </p>
+              </div>
+
+              <div class="faq-item mb-6">
+                <h3 class="text-xl font-semibold mb-2">
+                  ¿Cómo es el proceso de trabajo con ustedes?
+                </h3>
+                <p>
+                  Trabajamos en estrecha colaboración con nuestros clientes,
+                  comenzando con una fase de descubrimiento para entender tus
+                  objetivos. Luego, pasamos a la planificación, diseño,
+                  desarrollo y finalmente pruebas y despliegue. También
+                  ofrecemos soporte continuo para garantizar que tu sitio esté
+                  siempre actualizado.
+                </p>
+              </div>
+
+              <div class="faq-item mb-6">
+                <h3 class="text-2xl font-semibold mb-2">
+                  ¿Cuánto tiempo lleva desarrollar un sitio web con análisis de
+                  datos e IA?
+                </h3>
+                <p>
+                  El tiempo de desarrollo varía según la complejidad del
+                  proyecto. En general, un sitio web básico puede tardar entre 4
+                  y 8 semanas, mientras que proyectos más avanzados que incluyan
+                  análisis de datos e IA pueden requerir más tiempo.
+                </p>
+              </div>
+
+              <div class="faq-item mb-6">
+                <h3 class="text-2xl font-semibold mb-2">
+                  ¿Ofrecen soporte y mantenimiento una vez que el sitio está en
+                  funcionamiento?
+                </h3>
+                <p>
+                  Sí, ofrecemos paquetes de soporte y mantenimiento para
+                  garantizar que tu sitio web siga funcionando de manera óptima,
+                  incluidas actualizaciones de seguridad, mejoras y soporte
+                  técnico.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="atencion" class="h-[50dvh] flex items-center gap-5 mt-5">
+          <i class="fa-solid fa-headset text-7xl"></i>
+          <div>
+            <h2 class="text-container-white mb-8">Atención al Cliente</h2>
+            <div
+              class="container mx-auto px-6 flex flex-col items items center"
+            >
+              <p><i class="fa-solid fa-phone mr-3"></i>0800-321-0611</p>
+              <p><i class="fa-solid fa-phone mr-3"></i>0800-222-8114</p>
+            </div>
+          </div>
+        </section>
+        <section id="asistente" class="h-[50dvh] flex items-center gap-5 mt-5">
+          <i class="fa-solid fa-robot text-7xl"></i>
+          <div>
+            <h2 class="text-white mb-8">
+              Conoce a <span class="italic">Chatty</span>, nuestro Chatbot
+            </h2>
+            <div class="container mx-auto px-6">
+              <p class="mb-6">
+                Chatty está aquí para ayudarte. Si tienes preguntas sobre
+                nuestros servicios de desarrollo web, análisis de datos o
+                herramientas de inteligencia artificial, ¡simplemente comienza
+                una conversación!
+              </p>
+              <p class="mb-6">
+                Ya sea que necesites soporte técnico, información sobre nuestros
+                proyectos o una consulta personalizada, Chatty puede guiarte en
+                el camino.
+              </p>
+              <a
+                class="flex bg-bg-button rounded-full w-auto max-w-48 h-12 text-white items-center justify-center mb-10 sm:mb-0"
+                href="#"
+                ><p class="button-text">IR AL CHAT</p></a
+              >
+            </div>
+          </div>
+        </section>
       </div>
     </main>
+    <!-- Footer -->
     <footer
       id="footer-placeholder"
       class="flex bg-black w-full items-center justify-center bg-transparent"
@@ -47,7 +214,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
   $(document).ready(function () {
-    $('#header-placeholder').load('./src/html/header.html');
-    $('#footer-placeholder').load('./src/html/footer.html');
+    $("#header-placeholder").load("./src/html/header.html");
+    $("#footer-placeholder").load("./src/html/footer.html");
   });
 </script>
