@@ -3,23 +3,24 @@
 @tailwind utilities;
 
 @layer base {
-    h1 {
-      @apply text-4xl sm:text-6xl font-bold text-gray-800;
-    }
-    h2 {
-        @apply text-3xl font-bold text-gray-800;
-      }
-    .starfield {
-        position: relative;
-        background-color: black; 
-        background-image: url(../Canvas.png); 
-        background-size: cover; 
-        background-repeat: repeat;
-        background-position: center;
-    }
-    .button-text {
-        @apply text-xl
-    }
-
+  h1 {
+    @apply text-4xl sm:text-6xl font-bold text-gray-800;
+  }
+  h2 {
+    @apply text-3xl font-bold text-gray-800;
+  }
+  main {
+    @apply bg-auto bg-no-repeat bg-top  bg-center bg-bg-main;
+  }
+  /* .starfield {
+    @apply bg-cover bg-no-repeat bg-center bg-bg-main; */
+    /* position: relative; */
+    /* background-image: url(../Canvas.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center; */
+  /* }
+  .button-text {
+    @apply text-xl;
+  } */
 }
- 

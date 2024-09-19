@@ -9,7 +9,8 @@ module.exports = {
         'container-white': '#FCFCFC'
       },
       backgroundImage: {
-        'bg-footer': "url('../assets/img/degrade-footer.png')"
+        'bg-footer': "url('../assets/img/degrade-footer.png')",
+        'bg-main': "url('../assets/img/Canvas.png')"
       }
     },
   },
