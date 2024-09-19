@@ -6,3 +6,10 @@ Descargar e Instalar [Node.js](https://nodejs.org/en) para poder utilizar el com
 ```bash
   npm install
 ```
+
+## Ejecutar TailwindCSS
+
+Después de instalar dependencias hay que ejecutar el siguiente comando para que Tailwind funcione
+```bash
+  npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+```

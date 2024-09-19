@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <style>
+      .starfield {
+        position: relative;
+        background-color: black;
+        background-image: url("./assets/img/Canvas.png");
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+      }
+
+      .content {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white starfield">
+    <!-- Navbar -->
+    <header id="header-placeholder" class="bg-black text-white py-6"></header>
+
+    <!-- Hero Section -->
+    <section
+      class="text-center py-20 bg-gradient-to-b from-gray-900 to-black content"
+    >
+      <div class="container mx-auto px-4">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          "Transformamos tus ideas en soluciones digitales innovadoras"
+        </h1>
+        <p class="text-base md:text-lg lg:text-xl mb-8 px-4 md:px-0">
+          En <span class="text-blue-400">NewCommerce</span>, diseñamos y
+          desarrollamos software a medida para impulsar tu negocio hacia el
+          futuro.
+        </p>
+        <div class="space-x-4">
+          <a
+            href="#"
+            class="bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600"
+            >Demo</a
+          >
+          <a href="#" class="text-blue-400 hover:underline">How it works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 content">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-12">
+          Desarrollamos tecnología que marca la diferencia.
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <!-- Servicio 1 -->
+          <div class="bg-white text-black p-6 rounded-lg shadow-lg">
+            <img
+              src="servicio1.jpg"
+              alt="Servicio 1"
+              class="w-full h-48 object-cover mb-6 rounded-lg"
+            />
+            <h3 class="text-xl font-semibold mb-4">
+              DESCRIPCIÓN DE ALGUN SERVICIO
+            </h3>
+            <p class="text-gray-700">
+              Breve descripción del servicio ofrecido por la empresa.
+            </p>
+          </div>
+          <!-- Servicio 2 -->
+          <div class="bg-white text-black p-6 rounded-lg shadow-lg">
+            <img
+              src="servicio2.jpg"
+              alt="Servicio 2"
+              class="w-full h-48 object-cover mb-6 rounded-lg"
+            />
+            <h3 class="text-xl font-semibold mb-4">
+              DESCRIPCIÓN DE ALGUN SERVICIO
+            </h3>
+            <p class="text-gray-700">
+              Breve descripción del servicio ofrecido por la empresa.
+            </p>
+          </div>
+          <!-- Servicio 3 -->
+          <div class="bg-white text-black p-6 rounded-lg shadow-lg">
+            <img
+              src="servicio3.jpg"
+              alt="Servicio 3"
+              class="w-full h-48 object-cover mb-6 rounded-lg"
+            />
+            <h3 class="text-xl font-semibold mb-4">
+              DESCRIPCIÓN DE ALGUN SERVICIO
+            </h3>
+            <p class="text-gray-700">
+              Breve descripción del servicio ofrecido por la empresa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      id="footer-placeholder"
+      class="bg-bg-footer bg-center bg-cover flex bg-black w-full items-center justify-center"
+    ></footer>
+  </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#header-placeholder").load("./src/html/header.html");
+    $("#footer-placeholder").load("./src/html/footer.html");
+  });
+</script>
