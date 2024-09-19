@@ -1,6 +1,10 @@
-<nav class="container mx-auto flex justify-between items-center px-4">
+<nav
+  class="flex items-center justify-between px-4 h-24 gap-24 md:justify-center"
+>
   <div class="flex items-center">
-    <a href="../../index.html"><img src="Logo.png" alt="Logo" class="w-20 h-auto" /></a>
+    <a href="../../index.html"
+      ><img src="../../assets/img/logo.png" alt="Logo" class="w-20 h-auto"
+    /></a>
   </div>
 
   <!-- Icono del menú hamburguesa -->
@@ -22,36 +26,26 @@
   </button>
 
   <!-- Menu Links -->
-  <ul class="hidden md:flex space-x-6" id="menu">
-    <li>
-      <a href="../../sobre-nosotros.html" class="hover:text-blue-400"
+  <ul class="hidden flex-grow h-full md:flex" id="menu">
+    <li id="sobre-nosotros" class="container flex items-center justify-center">
+      <a href="../../sobre-nosotros.html" class="hover:text-link-hover"
         >Sobre nosotros</a
       >
     </li>
-    <li>
-      <a href="../../services.html" class="hover:text-blue-400">Servicios</a>
+    <li id="servicios" class="container flex items-center justify-center">
+      <a href="../../services.html" class="hover:text-link-hover">Servicios</a>
     </li>
-    <li>
-      <a href="../../index.html" class="hover:text-blue-400">Soporte</a>
+    <li id="soporte" class="container flex items-center justify-center">
+      <a href="../../soporte.html" class="hover:text-link-hover">Soporte</a>
     </li>
-    <li>
-      <a href="../../portfolio.html" class="hover:text-blue-400">Portfolio</a>
+    <li id="portfolio" class="container flex items-center justify-center">
+      <a href="../../portfolio.html" class="hover:text-link-hover">Portfolio</a>
     </li>
   </ul>
   <ul
     class="md:hidden hidden space-y-4 absolute top-16 right-4 bg-black text-white w-48 rounded-lg shadow-lg z-50"
     id="menu-mobile"
   >
-    <li>
-      <a href="../../index.html" class="block px-4 py-2 hover:bg-gray-700"
-        >Inicio</a
-      >
-    </li>
-    <li>
-      <a href="../../services.html" class="block px-4 py-2 hover:bg-gray-700"
-        >Servicios</a
-      >
-    </li>
     <li>
       <a
         href="../../sobre-nosotros.html"
@@ -60,13 +54,18 @@
       >
     </li>
     <li>
-      <a href="../../index.html" class="block px-4 py-2 hover:bg-gray-700"
-        >Support</a
+      <a href="../../services.html" class="block px-4 py-2 hover:bg-gray-700"
+        >Servicios</a
       >
     </li>
     <li>
-      <a href="../../index.html" class="block px-4 py-2 hover:bg-gray-700"
-        >Contacto</a
+      <a href="../../soporte.html" class="block px-4 py-2 hover:bg-gray-700"
+        >Soporte</a
+      >
+    </li>
+    <li>
+      <a href="../../portfolio.html" class="block px-4 py-2 hover:bg-gray-700"
+        >Portfolio</a
       >
     </li>
   </ul>
@@ -78,4 +77,26 @@
   menuButton.addEventListener("click", () => {
     menu.classList.toggle("hidden");
   });
+
+  const links = document.querySelectorAll("#menu li");
+  const nosotros = document.getElementById("sobre-nosotros");
+  const servicios = document.getElementById("servicios");
+  const soporte = document.getElementById("soporte");
+  const portfolio = document.getElementById("portfolio");
+
+  links.forEach((link) =>
+    link.classList.remove("border-b-4", "border-bg-button")
+  );
+
+  const path = window.location.pathname;
+
+  if (path.includes("sobre-nosotros.html")) {
+    nosotros.classList.add("border-b-4", "border-bg-button");
+  } else if (path.includes("services.html")) {
+    servicios.classList.add("border-b-4", "border-bg-button");
+  } else if (path.includes("soporte.html")) {
+    soporte.classList.add("border-b-4", "border-bg-button");
+  } else if (path.includes("portfolio.html")) {
+    portfolio.classList.add("border-b-4", "border-bg-button");
+  }
 </script>
