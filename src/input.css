@@ -17,7 +17,6 @@
         background-repeat: repeat;
         background-position: center;
     }
-    
     .button-text {
         @apply text-xl
     }
